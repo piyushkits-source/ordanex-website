@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ordanex helps enterprises automate orders, invoices, ASN, EDI, and partner onboarding across SAP, Oracle, Dynamics, X12, EDIFACT, email, and API workflows."
+      content="Ordanex helps enterprises automate touchless order automation, AP and AR invoices, order responses, order changes, and advanced ship notices across ERP-agnostic and document-format-agnostic workflows."
     />
-    <title>Ordanex | Order, Invoice & EDI Automation</title>
+    <meta
+      name="keywords"
+      content="touchless order automation, accounts payable invoice automation, accounts receivable invoice automation, order responses, order changes, advanced ship notices, buy side automation, sell side automation, ERP agnostic, document format agnostic, agentic AI onboarding"
+    />
+    <title>Ordanex | Touchless Order & Invoice Automation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,15 +23,16 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="brand" href="#home">
+        <a class="brand" href="#home" aria-label="Ordanex home">
           <span class="brand-mark">O</span>
           <span class="brand-copy">
             <strong>Ordanex</strong>
-            <small>Order and EDI automation</small>
+            <small>Document automation for modern ERPs</small>
           </span>
         </a>
+
         <nav class="topnav" aria-label="Primary">
-          <a href="#products">Products</a>
+          <a href="#platform">Platform</a>
           <a href="#services">Services</a>
           <a href="#why">Why Ordanex</a>
           <a href="#demo" class="nav-cta">Request Demo</a>
@@ -37,16 +42,25 @@
       <main id="home">
         <section class="hero">
           <div class="hero-copy">
+            <div class="hero-badges">
+              <span>Cloudflare Pages ready</span>
+              <span>Premium onboarding flow</span>
+              <span>Agentic AI onboarding</span>
+            </div>
             <span class="eyebrow">Unified commerce automation</span>
-            <h1>One platform for orders, invoices, ASN, and EDI across every ERP.</h1>
+            <h1>Touchless order automation for buy side and sell side operations.</h1>
             <p class="hero-text">
-              Ordanex helps enterprises move documents across SAP, Oracle, Dynamics, X12, EDIFACT, email, API,
-              SFTP, and IDoc flows with AI-assisted onboarding, validation, and monitoring.
+              Ordanex gives operations, finance, and integration teams one place to manage touchless order
+              automation, Accounts Payable invoices, Accounts Receivable invoices, order responses, order
+              changes, and Advance Ship Notices across SAP, Oracle, Dynamics, X12, EDIFACT, email, API, SFTP,
+              and IDoc flows.
             </p>
+
             <div class="hero-actions">
               <a href="#demo" class="button button-primary">Request a Demo</a>
-              <a href="#products" class="button button-secondary">Explore Products</a>
+              <a href="#platform" class="button button-secondary">Explore the Platform</a>
             </div>
+
             <div class="hero-stats" role="list" aria-label="Key capabilities">
               <article role="listitem">
                 <strong>4+</strong>
@@ -54,79 +68,99 @@
               </article>
               <article role="listitem">
                 <strong>10+</strong>
-                <span>integration formats</span>
+                <span>document formats</span>
               </article>
               <article role="listitem">
                 <strong>Zero-touch</strong>
-                <span>onboarding options</span>
+                <span>agentic AI onboarding option</span>
               </article>
             </div>
           </div>
 
-          <div class="hero-card">
+          <aside class="hero-card" aria-label="Platform snapshot">
             <div class="hero-card-header">
-              <span>Platform coverage</span>
-              <strong>Live orchestration view</strong>
+              <span>Platform snapshot</span>
+              <strong>Operations, finance, and integration in one view</strong>
             </div>
-            <div class="coverage-grid">
-              <div>
-                <h3>Orders</h3>
-                <p>PO, order changes, and order confirmations.</p>
+
+            <div class="hero-kpi-grid">
+              <div class="hero-kpi">
+                <span>Buy side</span>
+                <strong>POs · order changes · order responses</strong>
               </div>
-              <div>
-                <h3>Invoices</h3>
-                <p>AP and AR invoices across PDF, IDoc, XML, X12, and EDIFACT.</p>
+              <div class="hero-kpi">
+                <span>Sell side</span>
+                <strong>Invoices · ASN · AP · AR</strong>
               </div>
-              <div>
-                <h3>ASN</h3>
-                <p>Advance ship notices with structured line-item mapping.</p>
+              <div class="hero-kpi">
+                <span>ERP agnostic</span>
+                <strong>SAP · Oracle · D365 · NetSuite</strong>
               </div>
-              <div>
-                <h3>Monitoring</h3>
-                <p>Traceable message lifecycle, validation, and exceptions.</p>
+              <div class="hero-kpi">
+                <span>Document agnostic</span>
+                <strong>PDF · IDoc · XML · X12 · EDIFACT</strong>
               </div>
             </div>
-          </div>
+
+            <div class="signal-panel">
+              <div>
+                <span class="signal-label">Highlights</span>
+                <strong>Built for document-heavy teams</strong>
+              </div>
+              <ul>
+                <li>Agentic AI onboarding that learns from documents and workflows</li>
+                <li>Readably mapped payloads for orders, invoices, responses, and ASN</li>
+                <li>Validation, exception handling, and traceable monitoring</li>
+              </ul>
+            </div>
+          </aside>
         </section>
 
-        <section class="strip">
+        <section class="trust-strip" aria-label="Trusted by enterprise teams">
           <div>
-            <span>Built for enterprises</span>
-            <strong>SAP, Oracle, D365, NetSuite, custom APIs, and EDI partners</strong>
+            <span>Built for enterprise teams</span>
+            <strong>SAP, Oracle, D365, NetSuite, and partner ecosystems</strong>
           </div>
           <div>
             <span>Supported payloads</span>
             <strong>PDF, IDoc, XML, JSON, X12, EDIFACT, CSV, email, SFTP</strong>
           </div>
+          <div>
+            <span>Commercial model</span>
+            <strong>Different access and subscription plans for every stage</strong>
+          </div>
         </section>
 
-        <section id="products" class="section">
+        <section id="platform" class="section">
           <div class="section-heading">
-            <span>Products</span>
+            <span>Platform</span>
             <h2>Designed for the full document lifecycle.</h2>
             <p>
-              From first message to final approval, Ordanex keeps every document traceable, validated, and
-              ready for the right ERP target.
+              From first message to final approval, Ordanex keeps every document traceable, validated, and routed
+              to the right ERP target.
             </p>
           </div>
+
           <div class="cards cards-three">
-            <article class="card">
-              <h3>Order Automation</h3>
+            <article class="card card-feature">
+              <div class="card-icon">01</div>
+              <h3>Buy Side Automation</h3>
               <p>
-                Manage orders, order changes, and order confirmations with canonical mapping and partner-aware
-                routing.
+                Manage orders, order changes, and order responses with canonical mapping and partner-aware routing.
               </p>
             </article>
-            <article class="card">
-              <h3>Invoice Automation</h3>
+            <article class="card card-feature">
+              <div class="card-icon">02</div>
+              <h3>Accounts Payable and Accounts Receivable Invoices</h3>
               <p>
                 Handle AP and AR invoices with intelligent parsing, field validation, and readable monitoring.
               </p>
             </article>
-            <article class="card">
-              <h3>EDI & IDoc Orchestration</h3>
+            <article class="card card-feature">
+              <div class="card-icon">03</div>
+              <h3>Sell Side Automation</h3>
               <p>
-                Convert between SAP IDoc, X12, EDIFACT, XML, and API payloads with a clean operational UI.
+                Convert SAP IDoc, X12, EDIFACT, XML, and API payloads through a clean operational interface.
               </p>
             </article>
           </div>
@@ -137,6 +171,7 @@
             <span>Services</span>
             <h2>Start fast with implementation help and ongoing support.</h2>
           </div>
+
           <div class="cards cards-two">
             <article class="card">
               <h3>Implementation</h3>
@@ -144,6 +179,7 @@
                 <li>Discovery and mapping workshops</li>
                 <li>Partner onboarding and validation rules</li>
                 <li>ERP-specific document profiles</li>
+                <li>Agentic AI onboarding for faster rollout</li>
               </ul>
             </article>
             <article class="card">
@@ -152,6 +188,7 @@
                 <li>Monitoring and exception handling</li>
                 <li>Field accuracy tuning</li>
                 <li>Release support and rollout planning</li>
+                <li>Different access and subscription plan guidance</li>
               </ul>
             </article>
           </div>
@@ -160,25 +197,51 @@
         <section id="why" class="section feature-band">
           <div class="section-heading">
             <span>Why Ordanex</span>
-            <h2>Clarity for operations. Flexibility for integrations. Confidence for finance.</h2>
+            <h2>Clear for operations. Flexible for integrations. Confident for finance.</h2>
           </div>
+
           <div class="feature-list">
             <div>
               <strong>Unified monitoring</strong>
               <p>See inbound and outbound document flow in one place.</p>
             </div>
             <div>
-              <strong>AI-assisted onboarding</strong>
+              <strong>Agentic AI onboarding</strong>
               <p>Reduce setup time while keeping review and validation in the loop.</p>
             </div>
             <div>
-              <strong>Format-aware handling</strong>
+              <strong>Format-agnostic handling</strong>
               <p>Support for PDF, IDoc, XML, API, X12, EDIFACT, CSV, and email payloads.</p>
             </div>
             <div>
-              <strong>Enterprise-ready</strong>
-              <p>Built for multi-ERP environments and future growth.</p>
+              <strong>Subscription plans</strong>
+              <p>Different access tiers for startups, scaleups, and enterprise teams.</p>
             </div>
+          </div>
+        </section>
+
+        <section id="plans" class="section">
+          <div class="section-heading">
+            <span>Plans</span>
+            <h2>Different access and subscription plans for every stage.</h2>
+            <p>
+              Start with a lightweight access plan, move to guided onboarding, or choose premium onboarding-less
+              activation when you are ready to go faster.
+            </p>
+          </div>
+          <div class="cards cards-three">
+            <article class="card">
+              <h3>Starter</h3>
+              <p>For teams validating a narrow message flow or launching a focused pilot.</p>
+            </article>
+            <article class="card">
+              <h3>Professional</h3>
+              <p>For multi-format operations that need workflow support, visibility, and assisted onboarding.</p>
+            </article>
+            <article class="card">
+              <h3>Premium</h3>
+              <p>For onboarding-less activation with Agentic AI-led setup and priority support.</p>
+            </article>
           </div>
         </section>
 
@@ -187,50 +250,72 @@
             <span>Request a Demo</span>
             <h2>Tell us about your documents and we’ll tailor the walkthrough.</h2>
             <p>
-              Share your company details, ERP stack, and document types. We’ll reach out to schedule a demo.
+              Share your company details, ERP stack, and document types. We’ll reach out to schedule a focused demo.
             </p>
           </div>
 
-          <form class="demo-form" id="demoForm">
-            <div class="form-grid">
-              <label>
-                Full name
-                <input name="fullName" type="text" placeholder="Your name" required />
+          <div class="demo-layout">
+            <form class="demo-form" id="demoForm">
+              <div class="form-grid">
+                <label>
+                  Full name
+                  <input name="fullName" type="text" placeholder="Your name" required />
+                </label>
+                <label>
+                  Work email
+                  <input name="email" type="email" placeholder="name@company.com" required />
+                </label>
+                <label>
+                  Company
+                  <input name="company" type="text" placeholder="Company name" required />
+                </label>
+                <label>
+                  Role
+                  <input name="role" type="text" placeholder="Operations, IT, Finance..." />
+                </label>
+                <label>
+                  ERP / platform
+                  <input name="erp" type="text" placeholder="SAP, Oracle, D365, NetSuite..." />
+                </label>
+                <label>
+                  Document types
+                  <input name="documents" type="text" placeholder="Orders, Invoices, ASN, EDI..." />
+                </label>
+              </div>
+
+              <label class="full-width">
+                What would you like to automate?
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about current pain points, volumes, and any integrations you'd like to see."
+                ></textarea>
               </label>
-              <label>
-                Work email
-                <input name="email" type="email" placeholder="name@company.com" required />
-              </label>
-              <label>
-                Company
-                <input name="company" type="text" placeholder="Company name" required />
-              </label>
-              <label>
-                Role
-                <input name="role" type="text" placeholder="Operations, IT, Finance..." />
-              </label>
-              <label>
-                ERP / platform
-                <input name="erp" type="text" placeholder="SAP, Oracle, D365, NetSuite..." />
-              </label>
-              <label>
-                Document types
-                <input name="documents" type="text" placeholder="Orders, Invoices, ASN, EDI..." />
-              </label>
-            </div>
-            <label class="full-width">
-              What would you like to automate?
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Tell us about current pain points, volumes, and any integrations you'd like to see."
-              ></textarea>
-            </label>
-            <div class="form-actions">
-              <button type="submit" class="button button-primary">Request Demo</button>
-              <p id="demoStatus" class="form-status" aria-live="polite"></p>
-            </div>
-          </form>
+
+              <div class="form-actions">
+                <button type="submit" class="button button-primary">Request Demo</button>
+                <p id="demoStatus" class="form-status" aria-live="polite"></p>
+              </div>
+            </form>
+
+            <aside class="demo-aside">
+              <div class="aside-card">
+                <span>What to expect</span>
+                <strong>Premium walkthrough tailored to your flow</strong>
+                <ul>
+                  <li>ERP, format, and message-family overview</li>
+                  <li>Live monitor, viewer, and field panel demo</li>
+                  <li>Onboarding path for premium or onboarding-less launch</li>
+                  <li>Support for buy side and sell side automation</li>
+                </ul>
+              </div>
+              <div class="aside-card aside-emphasis">
+                <span>Contact</span>
+                <strong>hello@ordanex.ai</strong>
+                <p>We’ll respond with a proposed demo slot and a quick summary of the setup we recommend.</p>
+              </div>
+            </aside>
+          </div>
         </section>
       </main>
 
@@ -240,7 +325,7 @@
           <p>Automation for orders, invoices, ASN, and EDI across every ERP.</p>
         </div>
         <div class="footer-links">
-          <a href="#products">Products</a>
+          <a href="#platform">Platform</a>
           <a href="#services">Services</a>
           <a href="#demo">Request Demo</a>
         </div>

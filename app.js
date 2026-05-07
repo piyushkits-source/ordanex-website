@@ -10,6 +10,10 @@ function setStatus(message, isError = false) {
 }
 
 if (form) {
+  form.addEventListener("input", () => {
+    setStatus("");
+  });
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -42,7 +46,8 @@ if (form) {
       ].join("\n")
     );
 
-    setStatus("Opening your email client to send the demo request...");
+    setStatus("Opening your email client with a prefilled demo request...");
     window.location.href = `mailto:${DEMO_RECIPIENT}?subject=${subject}&body=${body}`;
+    form.reset();
   });
 }
