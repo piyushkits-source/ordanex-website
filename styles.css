@@ -216,6 +216,7 @@ ul {
   font-size: clamp(2.7rem, 6vw, 4.8rem);
   line-height: 0.96;
   letter-spacing: -0.05em;
+  max-width: 10.5ch;
 }
 
 .hero-text,
@@ -231,8 +232,8 @@ ul {
 }
 
 .hero-text {
-  max-width: 62ch;
-  font-size: 1.04rem;
+  max-width: 54ch;
+  font-size: 1.02rem;
 }
 
 .hero-actions {
@@ -310,6 +311,7 @@ ul {
   flex-direction: column;
   gap: 18px;
   justify-content: center;
+  align-self: stretch;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 255, 0.9)),
     radial-gradient(circle at top left, rgba(249, 115, 22, 0.08), transparent 35%);
@@ -345,6 +347,10 @@ ul {
   display: block;
   line-height: 1.45;
   font-size: 1rem;
+}
+
+.hero-card-header strong {
+  font-size: 1.12rem;
 }
 
 .signal-panel {
@@ -652,6 +658,7 @@ ul {
 
   .hero h1 {
     font-size: clamp(2.4rem, 10vw, 4rem);
+    max-width: none;
   }
 
   .hero-badges {
