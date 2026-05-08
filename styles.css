@@ -50,7 +50,7 @@ ul {
 }
 
 .page-shell {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1120px, calc(100% - 24px));
   margin: 0 auto;
   padding: 20px 0 36px;
 }
@@ -121,8 +121,10 @@ ul {
 .topnav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 18px;
   flex-wrap: wrap;
+  max-width: 760px;
 }
 
 .topnav a {
@@ -518,7 +520,7 @@ ul {
 
 .process-showcase {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   gap: 18px;
   align-items: start;
 }
@@ -830,7 +832,7 @@ ul {
 
 .media-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.16fr) minmax(0, 0.84fr);
   gap: 18px;
   align-items: start;
 }
@@ -874,7 +876,7 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 26px;
-  min-height: 420px;
+  aspect-ratio: 16 / 10;
   border: 1px solid rgba(11, 95, 255, 0.12);
   background:
     linear-gradient(180deg, rgba(15, 23, 42, 0.04), rgba(15, 23, 42, 0.08)),
@@ -885,7 +887,6 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 420px;
   object-fit: cover;
   object-position: center;
 }
@@ -980,7 +981,7 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 22px;
-  min-height: 240px;
+  aspect-ratio: 16 / 10;
   border: 1px solid rgba(11, 95, 255, 0.12);
   background: #09111f;
 }
@@ -988,7 +989,7 @@ ul {
 .media-video-frame img {
   display: block;
   width: 100%;
-  height: 240px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   filter: saturate(1.02) contrast(1.04);
@@ -1041,7 +1042,8 @@ ul {
 .media-thumbnails img {
   display: block;
   width: 100%;
-  height: 96px;
+  aspect-ratio: 16 / 10;
+  height: auto;
   object-fit: cover;
   border-radius: 18px;
   border: 1px solid rgba(11, 95, 255, 0.12);
@@ -1262,11 +1264,15 @@ ul {
   }
 
   .media-stage {
-    min-height: 320px;
+    aspect-ratio: 16 / 11;
   }
 
   .media-hero-image {
-    min-height: 320px;
+    height: 100%;
+  }
+
+  .media-video-frame {
+    aspect-ratio: 16 / 11;
   }
 }
 
@@ -1309,16 +1315,20 @@ ul {
   }
 
   .media-stage {
-    min-height: 260px;
+    aspect-ratio: 4 / 3;
     border-radius: 20px;
   }
 
   .media-hero-image {
-    min-height: 260px;
+    height: 100%;
   }
 
   .media-stage-overlay {
     inset: auto 12px 12px 12px;
     padding: 14px;
+  }
+
+  .media-video-frame {
+    aspect-ratio: 4 / 3;
   }
 }
