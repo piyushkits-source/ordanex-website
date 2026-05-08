@@ -846,197 +846,78 @@ ul {
 
 .media-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(0, 0.84fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   align-items: start;
 }
 
-.media-feature,
 .media-card {
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.media-feature {
-  padding: 22px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 255, 0.94)),
-    radial-gradient(circle at top left, rgba(11, 95, 255, 0.08), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.08), transparent 28%);
-}
-
-.media-badge-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 14px;
-}
-
-.media-badge-row span {
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(11, 95, 255, 0.14);
-  background: rgba(11, 95, 255, 0.08);
-  color: var(--brand);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.media-stage {
-  position: relative;
-  overflow: hidden;
-  border-radius: 26px;
-  aspect-ratio: 16 / 9;
-  border: 1px solid rgba(11, 95, 255, 0.12);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(11, 95, 255, 0.03)),
-    #f7faff;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
-}
-
-.media-hero-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.media-caption {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 18px;
-  padding-top: 18px;
-}
-
-.media-caption span.signal-label {
-  margin-bottom: 8px;
-}
-
-.media-caption strong {
-  display: block;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.12rem;
-  margin-bottom: 6px;
-}
-
-.media-caption p {
-  margin: 0;
-  color: var(--muted);
-  max-width: 58ch;
-  line-height: 1.65;
-}
-
-.media-side {
   display: grid;
-  gap: 18px;
-}
-
-.media-card {
-  padding: 22px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(246, 249, 255, 0.92)),
-    rgba(255, 255, 255, 0.82);
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 250, 255, 0.94));
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .media-card strong {
   display: block;
-  margin: 10px 0 10px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.16rem;
+  font-size: 1.08rem;
   letter-spacing: -0.03em;
+  margin: 0;
 }
 
 .media-card p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
-.media-video-frame {
-  margin-top: 18px;
+.media-card-feature {
+  min-height: 100%;
+}
+
+.media-card-feature .signal-label {
+  margin-bottom: 2px;
+}
+
+.media-frame {
   position: relative;
   overflow: hidden;
-  border-radius: 22px;
-  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  aspect-ratio: 16 / 10;
   border: 1px solid rgba(11, 95, 255, 0.12);
   background: #f7faff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
 }
 
-.media-video-frame img {
+.media-frame img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(1.02) contrast(1.04);
+  filter: saturate(1.01) contrast(1.02);
 }
 
-.media-video-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(11, 95, 255, 0.14));
+@media (max-width: 1080px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.media-copy-block {
-  margin-top: 16px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  border: 1px solid rgba(11, 95, 255, 0.12);
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
-}
+@media (max-width: 640px) {
+  .media-card {
+    border-radius: 20px;
+    padding: 16px;
+  }
 
-.media-copy-block span {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--brand);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.media-copy-block strong {
-  display: block;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1rem;
-  line-height: 1.3;
-}
-
-.media-card-light .media-thumbnails {
-  display: grid;
-  gap: 12px;
-  margin-top: 14px;
-}
-
-.media-thumbnails figure {
-  display: grid;
-  gap: 8px;
-  margin: 0;
-}
-
-.media-thumbnails img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  height: auto;
-  object-fit: cover;
-  border-radius: 18px;
-  border: 1px solid rgba(11, 95, 255, 0.12);
-  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.06);
-}
-
-.media-thumbnails figcaption {
-  color: var(--muted);
-  font-size: 0.92rem;
-  font-weight: 700;
+  .media-frame {
+    aspect-ratio: 16 / 11;
+  }
 }
 
 .feature-list {
