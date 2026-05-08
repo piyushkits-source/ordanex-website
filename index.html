@@ -44,6 +44,8 @@
 
         <nav class="topnav" aria-label="Primary">
           <a href="#platform">Platform</a>
+          <a href="#process">Process</a>
+          <a href="#media">Media</a>
           <a href="#gui">GUI</a>
           <a href="#services">Services</a>
           <a href="#why">Why Ordanex</a>
@@ -220,6 +222,206 @@
                 Use Agentic AI onboarding, templates, and validation rules to go live with less manual setup.
               </p>
             </article>
+          </div>
+        </section>
+
+        <section id="process" class="section process-section">
+          <div class="section-heading">
+            <span>Process</span>
+            <h2>Show the full document journey with a cinematic workflow view.</h2>
+            <p>
+              Switch between order-to-cash and requisition-to-pay to see how Ordanex captures, validates, routes,
+              and updates the business in the source ERP.
+            </p>
+          </div>
+
+          <div class="process-mode-switch" role="tablist" aria-label="Process walkthrough mode">
+            <button type="button" class="process-tab is-active" data-process-mode="order">Order to cash</button>
+            <button type="button" class="process-tab" data-process-mode="requisition">Requisition to pay</button>
+          </div>
+
+          <div class="process-showcase" data-process-mode="order">
+            <article class="process-film">
+              <div class="process-film-top">
+                <div>
+                  <span class="signal-label">Interactive walkthrough</span>
+                  <strong id="processTitle">Order to cash</strong>
+                </div>
+                <span class="process-pill">Buyer to ERP</span>
+              </div>
+
+              <div class="process-flow" aria-label="Workflow steps">
+                <div class="process-step is-active">
+                  <span>01</span>
+                  <strong id="processStep1Title">Capture</strong>
+                  <p id="processStep1Copy">Order or requisition enters through email, portal, API, or EDI.</p>
+                </div>
+                <div class="process-step">
+                  <span>02</span>
+                  <strong id="processStep2Title">Validate</strong>
+                  <p id="processStep2Copy">Rules, field accuracy, and approvals keep the flow clean.</p>
+                </div>
+                <div class="process-step">
+                  <span>03</span>
+                  <strong id="processStep3Title">Create</strong>
+                  <p id="processStep3Copy">A clean downstream PO, sales order, or invoice is generated.</p>
+                </div>
+                <div class="process-step">
+                  <span>04</span>
+                  <strong id="processStep4Title">Respond</strong>
+                  <p id="processStep4Copy">ERP status, confirmations, ASN, goods receipt, and invoice updates come back automatically.</p>
+                </div>
+              </div>
+
+              <div class="process-video" aria-label="Process walkthrough preview">
+                <div class="process-video-copy">
+                  <span class="signal-label">Video preview</span>
+                  <strong id="processVideoTitle">Watch the full order lifecycle move through Ordanex</strong>
+                  <p id="processVideoCopy">
+                    Documents move from capture to matching to ERP handoff, with status updates coming back
+                    automatically.
+                  </p>
+                  <button type="button" class="button button-secondary process-play">Play walkthrough</button>
+                </div>
+                <div class="process-motion">
+                  <div class="motion-track">
+                    <span class="motion-dot"></span>
+                    <span class="motion-bar"></span>
+                    <span class="motion-dot"></span>
+                    <span class="motion-bar"></span>
+                    <span class="motion-dot"></span>
+                    <span class="motion-bar"></span>
+                    <span class="motion-dot"></span>
+                  </div>
+                  <div class="motion-cards">
+                    <div class="motion-card motion-card-a">
+                      <span>01</span>
+                      <strong id="motionCard1Title">Buyer order</strong>
+                      <small id="motionCard1Copy">Captured from the portal or inbox</small>
+                    </div>
+                    <div class="motion-card motion-card-b">
+                      <span>02</span>
+                      <strong id="motionCard2Title">Match &amp; validate</strong>
+                      <small id="motionCard2Copy">Field mapping, totals, and routing checks</small>
+                    </div>
+                    <div class="motion-card motion-card-c">
+                      <span>03</span>
+                      <strong id="motionCard3Title">ERP update</strong>
+                      <small id="motionCard3Copy">Sales order, GR, ASN, and invoice status flow back</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="process-gallery" aria-label="Process snapshots">
+              <article class="process-snapshot">
+                <div class="snapshot-image snapshot-one"></div>
+                <div class="snapshot-meta">Order capture</div>
+                <h3 id="snapshot1Title">Buyer order intake</h3>
+                <p id="snapshot1Copy">Browse products, submit the order, and create the business document automatically.</p>
+              </article>
+              <article class="process-snapshot">
+                <div class="snapshot-image snapshot-two"></div>
+                <div class="snapshot-meta">Receipt / handling</div>
+                <h3 id="snapshot2Title">Exception-aware handling</h3>
+                <p id="snapshot2Copy">Validation, approval, and auto-correction keep the transaction on track.</p>
+              </article>
+              <article class="process-snapshot">
+                <div class="snapshot-image snapshot-three"></div>
+                <div class="snapshot-meta">ERP closeout</div>
+                <h3 id="snapshot3Title">Downstream updates</h3>
+                <p id="snapshot3Copy">Capture confirmations, ASN, goods receipts, and invoice events in the portal.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="media" class="section media-section">
+          <div class="section-heading">
+            <span>Media</span>
+            <h2>Bring the platform to life with premium images and walkthrough-ready visuals.</h2>
+            <p>
+              This section is designed to feel like an enterprise product showcase, with space for polished
+              screenshots, walkthrough recordings, and customer-facing proof of capability.
+            </p>
+          </div>
+
+          <div class="media-grid">
+            <article class="media-feature">
+              <div class="media-badge-row">
+                <span>Featured visual</span>
+                <span>Homepage hero asset</span>
+              </div>
+              <div class="media-stage">
+                <img
+                  class="media-hero-image"
+                  src="./media/ordanex-enterprise-suite.png"
+                  alt="Ordanex enterprise storefront, workflow, monitoring, and analytics composite"
+                  loading="lazy"
+                />
+                <div class="media-stage-overlay">
+                  <span>Premium walkthrough poster</span>
+                  <strong>Capture, validate, route, and monitor every document flow.</strong>
+                  <p>
+                    Use this as a hero visual for the website, a customer pitch deck, or the opening frame of a
+                    product walkthrough video.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media-caption">
+                <div>
+                  <strong>Enterprise media direction</strong>
+                  <p>
+                    The layout is ready for screenshots, motion graphics, or a recorded walkthrough of buyer
+                    storefronts, monitoring, field mapping, and analytics.
+                  </p>
+                </div>
+                <button type="button" class="button button-secondary media-play">Play preview</button>
+              </div>
+            </article>
+
+            <div class="media-side">
+              <article class="media-card media-video-card">
+                <span class="signal-label">Video ready</span>
+                <strong>Drop in a product walkthrough recording</strong>
+                <p>
+                  Add MP4 or WebM files for order capture, invoice handling, buyer storefront setup, ERP sync, or
+                  exception management to create a more conversion-focused enterprise page.
+                </p>
+                <div class="media-video-frame">
+                  <img
+                    src="./media/ordanex-enterprise-whiteboard.png"
+                    alt="Preview frame for Ordanex walkthrough video"
+                    loading="lazy"
+                  />
+                  <div class="media-video-copy">
+                    <span>Walkthrough preview</span>
+                    <strong>Order to cash • Requisition to pay • Buyer storefront</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media-card media-card-light">
+                <span class="signal-label">Image set</span>
+                <strong>Reusable visual stories</strong>
+                <div class="media-thumbnails">
+                  <figure>
+                    <img src="./media/ordanex-enterprise-suite.png" alt="Buyer storefront preview" loading="lazy" />
+                    <figcaption>Buyer storefront</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./media/ordanex-enterprise-hero.png" alt="Order-to-cash preview" loading="lazy" />
+                    <figcaption>Order-to-cash</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./media/ordanex-enterprise-whiteboard.png" alt="Requisition-to-pay preview" loading="lazy" />
+                    <figcaption>Requisition-to-pay</figcaption>
+                  </figure>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
