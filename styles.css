@@ -890,11 +890,11 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 26px;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   border: 1px solid rgba(11, 95, 255, 0.12);
   background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.04), rgba(15, 23, 42, 0.08)),
-    #08101f;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(11, 95, 255, 0.03)),
+    #f7faff;
 }
 
 .media-hero-image {
@@ -910,17 +910,18 @@ ul {
   inset: auto 18px 18px 18px;
   padding: 18px;
   border-radius: 20px;
-  background: rgba(8, 15, 32, 0.66);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(11, 95, 255, 0.12);
   backdrop-filter: blur(14px);
-  color: white;
+  color: var(--text);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
   max-width: 560px;
 }
 
 .media-stage-overlay span {
   display: inline-block;
   margin-bottom: 8px;
-  color: #9ec1ff;
+  color: var(--brand);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 11px;
@@ -938,7 +939,7 @@ ul {
 
 .media-stage-overlay p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.84);
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -972,7 +973,7 @@ ul {
 .media-card {
   padding: 22px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 249, 255, 0.9)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(246, 249, 255, 0.92)),
     rgba(255, 255, 255, 0.82);
 }
 
@@ -995,9 +996,9 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 22px;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   border: 1px solid rgba(11, 95, 255, 0.12);
-  background: #09111f;
+  background: #f7faff;
 }
 
 .media-video-frame img {
@@ -1013,7 +1014,7 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 16, 31, 0.04), rgba(8, 16, 31, 0.34));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(11, 95, 255, 0.14));
 }
 
 .media-video-copy {
@@ -1024,11 +1025,16 @@ ul {
   z-index: 1;
   display: grid;
   gap: 4px;
-  color: white;
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(11, 95, 255, 0.12);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
 }
 
 .media-video-copy span {
-  color: #9ec1ff;
+  color: var(--brand);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 11px;
