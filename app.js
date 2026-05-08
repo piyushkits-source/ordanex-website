@@ -31,7 +31,7 @@ if (form) {
       return;
     }
 
-    const subject = encodeURIComponent(`Ordanex demo request from ${company}`);
+    const subject = encodeURIComponent(`Ordanex walkthrough request from ${company}`);
     const body = encodeURIComponent(
       [
         `Name: ${fullName}`,
@@ -46,7 +46,7 @@ if (form) {
       ].join("\n")
     );
 
-    setStatus("Opening your email client with a prefilled demo request...");
+    setStatus("Opening your email client with a prefilled walkthrough request...");
     window.location.href = `mailto:${DEMO_RECIPIENT}?subject=${subject}&body=${body}`;
     form.reset();
   });
